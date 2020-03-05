@@ -1,0 +1,22 @@
+.nav-flex-container {
+  display: flex;
+  justify-content: center;
+  margin: 8px;
+}
+
+.nav-links > li {
+  display: inline;
+  margin: 5px;
+  font-size: 12px;
+  font-family: $sans-serif;
+}
+
+.nav-links li a {
+   text-decoration: none;
+}
+
+.nav-links li a:hover {
+   background-color: $light-gray;
+   text-decoration: none;
+   
+}
