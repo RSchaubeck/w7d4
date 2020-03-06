@@ -49,3 +49,14 @@ font-size: 18px;
 .hidden {
   
 }
+
+@media all and (max-width: 500px) {
+  .right-nav button {
+  display: none;
+  }
+  .left-nav {
+   margin-bottom: 20px;
+  }
+}
+
+

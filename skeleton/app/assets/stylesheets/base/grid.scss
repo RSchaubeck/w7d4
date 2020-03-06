@@ -1,19 +1,138 @@
 .col {
   // ...
+  float: left;
+  box-sizing: border-box;
 }
 
 /* Attribute selector targeting all elements
 with a class attribute containing 'col-' */
 [class*='col-'] {
   // ...
+  padding-right: 20px;
 }
 
 [class*='col-']:last-of-type {
   // ...
+
+}
+
+.columns {
+  display: flex;
+  border-top: 1px $light-gray solid;
+  padding-top: 15px;
+  background-image: url(assets/new_office.jpg);
+}
+
+.flex-right {
+  display: flex;
+}
+
+#left-section {
+  width: 45%;
+  margin-right: 15px;
+}
+
+#right-section {
+  width: 45%;
+}
+.signup {
+  display: flex;
+}
+section.signup {
+  width: 100%;
+}
+
+.signup-input {
+  flex: 1;
+}
+
+.col-left h1:hover {
+  text-decoration: underline;
+  font-family: $serif;
+  font-style: italic;
+  cursor: pointer;
+}
+
+.col-left h4 {
+  margin-top: 0em;
+  color: $gray;
+}
+
+.col-left ul li {
+   list-style: initial;
+   margin-bottom: 10px;
+}
+
+.col-left a {
+  color: $blue;
+  text-decoration: none;
+}
+
+.col-left a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.col-middle p:first-child {
+  margin-top: 10px;
+}
+
+.col-middle a {
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+}
+.col-middle h4 {
+  margin: 2px;
+  color: $gray;
+}
+
+.col-middle a:hover {
+  text-decoration: underline;
+}
+
+.col-right h4 {
+  display: flex;
+  justify-content: center;
+}
+
+#left-section h4, #right-section h4:first-child {
+  font-weight: normal;
+}
+
+#left-section a, #right-section a {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#left-section a:hover, #right-section a:hover {
+  text-decoration: underline;
+}
+
+#byline {
+  color: $gray;
+}
+img[alt="Office"] {
+  height: 70px;
+}
+
+#last-line {
+  color: $gray;
+}
+
+.thumbnail {
+  height: 80px;
+  width: 120px;
+}
+
+.thumbnail img {
+  object-fit: cover;
 }
 
 @media all and (max-width: 1000px) {
-  [class*='col-'] {
-    // width:
+  .columns {
+    display: flex;
+    flex-direction: column;
+    border-top: 0px white solid;
   }
 }

@@ -20,3 +20,9 @@
    text-decoration: none;
    
 }
+
+@media all and (max-width: 500px) {
+  .nav-flex-container .nav-links li a {
+   display: none;
+  }
+}
